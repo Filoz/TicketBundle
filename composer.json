@@ -21,7 +21,7 @@
         "knplabs/knp-paginator-bundle": "~2.3"
     },
     "require-dev": {
-        "symfony/form": "~2.3"
+        "symfony/form": "~2.3|3.0"
     },
     "autoload": {
         "psr-4": {

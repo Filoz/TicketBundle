@@ -20,6 +20,6 @@ class StatusType extends AbstractType
 
     public function getParent()
     {
-        return 'choice';
+        return 'Symfony\Component\Form\Extension\Core\Type\ChoiceType';
     }
 }

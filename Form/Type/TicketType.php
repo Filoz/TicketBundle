@@ -26,7 +26,7 @@ class TicketType extends AbstractType
             ->add('subject', 'Symfony\Component\Form\Extension\Core\Type\TextType', array(
                 'label' => 'LABEL_SUBJECT',
             ))
-            ->add('messages', 'collection', array(
+            ->add('messages', 'Symfony\Component\Form\Extension\Core\Type\CollectionType', array(
                 'type' => 'Hackzilla\Bundle\TicketBundle\Form\Type\TicketMessageType',
                 'options' => [
                     'new_ticket' => true,

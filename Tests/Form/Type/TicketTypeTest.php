@@ -2,6 +2,7 @@
 
 namespace Hackzilla\Bundle\TicketBundle\Tests\Form\Type;
 
+use Hackzilla\Bundle\TicketBundle\Entity\Ticket;
 use Hackzilla\Bundle\TicketBundle\Form\Type\TicketMessageType;
 use Hackzilla\Bundle\TicketBundle\Form\Type\TicketType;
 use Symfony\Component\Form\PreloadedExtension;
@@ -33,7 +34,7 @@ class TicketTypeTest extends TypeTestCase
     {
         $formData = array();
 
-        $data = new \Hackzilla\Bundle\TicketBundle\Entity\Ticket();
+        $data = new Ticket();
 
         $form = $this->factory->create('Hackzilla\Bundle\TicketBundle\Form\Type\TicketType');
 

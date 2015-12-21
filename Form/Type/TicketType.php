@@ -23,7 +23,7 @@ class TicketType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('subject', 'text', array(
+            ->add('subject', 'Symfony\Component\Form\Extension\Core\Type\TextType', array(
                 'label' => 'LABEL_SUBJECT',
             ))
             ->add('messages', 'collection', array(
